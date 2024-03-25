@@ -1,0 +1,12 @@
+name: app_cmig
+title: app_cmig
+username:
+account: acrispim
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3785936
+bundleId: 4340376
+url: https://acrispim.shinyapps.io/app_cmig/
+when: 1615664022.00312
+asMultiple: FALSE
+asStatic: FALSE

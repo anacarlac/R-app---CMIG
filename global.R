@@ -1,0 +1,38 @@
+#load packages
+library(tidyverse)
+library(ggthemes)
+library(plotly)
+library(RColorBrewer)
+library(shiny)
+library(shinydashboard)
+library(dashboardthemes)
+library(leaflet)
+library(sf)
+library(geobr)
+library(waffle)
+library(hrbrthemes)
+library(extrafont)
+library(showtext)
+library(ggpubr)
+
+
+#load datasets
+#dt_tempo <- readr::read_rds("dt_tempo.RDS")
+media_br <- readr::read_rds("media_br.RDS")
+media_homem <- readr::read_rds("media_homem.RDS")
+media_mulher <- readr::read_rds("media_mulher.RDS")
+dt_tempo_etario <- readr::read_rds("dt_tempo_etario.RDS")
+dt_tempo_raca <- readr::read_rds("dt_tempo_raca.RDS")
+dt_rend <- readr::read_rds("dt_rend.RDS")
+dt_ocup <- readr::read_rds("dt_ocup.RDS")
+dt_educ_sup <- readr::read_rds("dt_educ_sup.RDS")
+dt_educ <- readr::read_rds("dt_educ.RDS")
+dt_viol_map <- readr::read_rds("dt_viol_map.RDS")
+dt_hom_ano <- readr::read_rds("dt_hom_ano.RDS")
+dt_casamento <- readr::read_rds("dt_casamento.RDS")
+dt_violobs <- readr::read_rds("dt_violobs.RDS")
+
+#fontAwesome
+font_add(family = "FontAwesome", regular = "C:/pessoal/Projetos/2021 App CMIG/R app - CMIG/fontawesome/Font-Awesome-4.7.0/Font-Awesome-4.7.0/fonts/fontawesome-webfont.ttf")
+#font_add(family = "FontAwesome", regular = "fontawesome-webfont.ttf")
+showtext_auto()

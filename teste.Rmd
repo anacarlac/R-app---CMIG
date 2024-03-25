@@ -1,0 +1,48 @@
+---
+title: "teste1"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(ggpubr)
+library(ggthemes)
+library(readr)
+dt_educ <- readr::read_rds("dt_educ.RDS")
+
+```
+
+
+```{r}
+
+plot_educ<-ggdotchart(dt_educ, x = "raça", y = "alfab",
+                        color = "sexo",                                
+                        palette = c("darkorchid4", "darkorchid1"), # Custom color palette
+                        #sorting = "descending",      
+                        rotate = TRUE,                                
+                        dot.size = 14,                                
+                        group = "sexo", 
+                        y.text.col = TRUE,
+                        #label = paste0(round(dt_educ$alfab,1), "%"), 
+                        label = "alfab",
+                        font.label = list(color = "white", 
+                                          face="bold",
+                                          size = 12, 
+                                          vjust = 0.5),
+                        ggtheme= theme_hc()
+  ) +
+    facet_grid(faixa_etaria ~ sexo) +
+    ylim(0,100) +
+    ggthemes::theme_wsj(base_size = 15,
+                        color="gray") + # Add dashed grids
+    labs(y = "Porcentagens de pessoas alfabetizadas no Brasil") 
+  
+  
+  ggpar(plot_educ, legend="none")
+  
+```
+
