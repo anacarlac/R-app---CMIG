@@ -1,7 +1,7 @@
 # Shiny app about gender gap data from Brazil in 2021
-Shiny app available [here](https://acrispim.shinyapps.io/appCMIG/)
-Source: Conjunto Mínimo de Indicadores de Gênero (Brasil; [about data](https://www.ibge.gov.br/estatisticas/multidominio/genero/20163-estatisticas-de-genero-indicadores-sociais-das-mulheres-no-brasil.html?=&t=sobre)
-Publication year: 2021
+- Shiny app available [here](https://acrispim.shinyapps.io/appCMIG/).
+- Source: Conjunto Mínimo de Indicadores de Gênero (Brasil; [about data](https://www.ibge.gov.br/estatisticas/multidominio/genero/20163-estatisticas-de-genero-indicadores-sociais-das-mulheres-no-brasil.html?=&t=sobre)).
+- Publication year: 2021.
 
 ## About the project
 Worldwide, it can take up to 131 years to close the gender gap according to the World Economic Forum (2023). 
